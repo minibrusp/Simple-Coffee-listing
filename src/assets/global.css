@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,600;9..40,700&display=swap');
+
+:root {
+  --light-black-pearl: hsl(210, 7%, 11%);
+  --black-pearl: hsl(210, 11%, 7%);
+  --raven: hsl(212, 6%, 46%);
+  --granny-apple: hsl(143, 39%, 82%);
+  --floral-white: hsl(34, 89%, 96%);
+  --grandis: hsl(40, 89%, 69%);
+  --terra-cota: hsl(9, 80%, 65%);
+}
+
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--raven);
+  background-color: var(--black-pearl);
+}
