@@ -1,5 +1,7 @@
 # DevChallenges's Simple Coffee Listing challenge
 
+- used url query pattern to change displayed coffee listing.
+
 ![preview](./design/preview.webp)
 
 ## Design
@@ -10,8 +12,14 @@
 
 ## Built with
 
-- Vue (Options API)
+- Vue 3 (Options API)
 - Vue Router
+- CSS3
+
+## Project Links
+
+- Live Site URL: [here](https://simple-coffee-listing-phi.vercel.app/)
+- DevChallenges Solution URL: [here](https://devchallenges.io/solution/4875)
 
 ## Project setup
 
