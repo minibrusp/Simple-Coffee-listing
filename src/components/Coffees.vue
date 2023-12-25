@@ -60,5 +60,27 @@ section.coffees {
   padding: 1rem 0;
   display: grid;
   gap: 3.25rem;
+  /* min-height: 500px; */
+}
+
+@media screen and (min-width: 387px) {
+  section.coffees {
+    padding: 1.25rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.coffees {
+    grid-template-columns: repeat(2, 260px);
+    justify-content: center;
+    column-gap: 1.5rem;
+    row-gap: 3.25rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  section.coffees {
+    grid-template-columns: repeat(3, 260px);
+  }
 }
 </style>

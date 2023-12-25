@@ -35,12 +35,17 @@ export default {
 section.coffee {
   max-width: 260px;
   margin: 0 auto;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  animation: fadeIn 1s ease;
 }
 
 /* .coffee_header  */
 section.coffee .coffee_header {
   display: block;
   position: relative;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 section.coffee .coffee_header span {
@@ -54,12 +59,20 @@ section.coffee .coffee_header span {
   padding: 4px 10px;
   border-radius: 10px;
   color: var(--light-black-pearl);
+
+  z-index: 5;
 }
 
 section.coffee .coffee_header img {
   width: 100%;
   border-radius: 15px;
   display: block;
+
+  transition: transform 1s ease;
+}
+
+section.coffee:hover .coffee_header img {
+  transform: scale(1.1);
 }
 
 /* coffee_details  */
@@ -127,5 +140,12 @@ section.coffee .coffee_details .coffee_details_bottom .sold-out {
   color: var(--terra-cota);
 }
 
-/* section.coffee {} */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 </style>
